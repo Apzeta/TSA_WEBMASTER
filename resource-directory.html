@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Directory - Community Resource Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/megaten_20xx/font.css"> <!-- Link to your megaten font -->
+</head>
+<body>
+    <header>
+        <h1>Resource Directory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="featured-resources.html">Featured Resources</a></li>
+                <li><a href="#submit-form">Submit New Resource</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Resource Directory Section -->
+        <section id="directory">
+            <h2>Community Resources</h2>
+            <input type="text" id="search-bar" placeholder="Search Resources..." oninput="searchResources()">
+            <select id="filter-category" onchange="filterResources()">
+                <option value="all">All Categories</option>
+                <option value="education">Education</option>
+                <option value="health">Health</option>
+                <option value="food">Food</option>
+                <option value="housing">Housing</option>
+            </select>
+            <div id="resource-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Community Resource Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
