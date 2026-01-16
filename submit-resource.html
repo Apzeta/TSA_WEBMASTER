@@ -3,48 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit New Resource - Community Resource Hub</title>
+    <meta name="description" content="Submit a new community resource to help others.">
+    <title>Submit Resource - Community Resource Hub</title>
+
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="/megaten_20xx/font.css"> <!-- Link to your megaten font -->
+    <link rel="stylesheet" href="fonts/megaten_20xx/font.css">
 </head>
 <body>
-    <header>
-        <h1>Submit New Resource</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resource-directory.html">Resource Directory</a></li>
-                <li><a href="featured-resources.html">Featured Resources</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="submit-form">
-            <h2>Submit a New Resource</h2>
-            <form id="resource-form">
-                <label for="name">Resource Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="category">Category:</label>
+<header>
+    <h1>Submit a New Resource</h1>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resource-directory.html">Resource Directory</a></li>
+            <li><a href="featured-resources.html">Featured Resources</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="submit-form">
+        <h2>Resource Submission Form</h2>
+
+        <form id="resource-form">
+            <div>
+                <label for="name">Resource Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="category">Category</label>
                 <select id="category" name="category" required>
                     <option value="education">Education</option>
                     <option value="health">Health</option>
                     <option value="food">Food</option>
                     <option value="housing">Housing</option>
-                </select><br>
-                <label for="description">Description:</label><br>
-                <textarea id="description" name="description" rows="4" required></textarea><br>
-                <label for="link">Link:</label>
-                <input type="url" id="link" name="link" required><br>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+                </select>
+            </div>
 
-    <footer>
-        <p>&copy; 2026 Community Resource Hub. All rights reserved.</p>
-    </footer>
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
 
-    <script src="js/script.js"></script>
+            <div>
+                <label for="link">Website Link</label>
+                <input type="url" id="link" name="link" required placeholder="https://example.com">
+            </div>
+
+            <button type="submit">Submit Resource</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Community Resource Hub. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
